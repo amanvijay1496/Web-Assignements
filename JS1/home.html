@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" type="text/css" href="calcstyle.css">
+    <script src="script.js"></script>
+    <title>My First Web Page</title>
+</head>
+
+<body>
+    <div class="calc">
+        <h2 id="demo">Calculator</h2>
+        <form name="calculator">
+            <div class="calFNo">
+                First Number:
+                <input type="text" name="fNo" placeholder="Enter first number" onkeyup="falDisable()"/>
+            </div>
+            <div class="calLSNo">
+                Second Number:
+                <input type="text" name="sNo" placeholder="Enter second number" />
+            </div>
+            <div class="calResult">
+                Result
+                <input type="text" name="txtresult" placeholder="Result" />
+            </div>
+            <div class="calButton">
+                <input type="button"  onclick="calc('add')" id="addButton" value="Addition" disabled/>
+                <input type="button" onclick="calc('sub')" id="subButton" value="Subtraction" disabled/>
+                <input type="button" onclick="calc('mul')" id="mulButton" value="Multiplication" disabled/>
+                <input type="button" onclick="calc('div')" id="divButton" value="Division" disabled/>
+            </div>
+
+        </form>
+    </div>
+
+</body></html>
