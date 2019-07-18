@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div class="formBody">
+        <h2>User Form</h2>
+        <form name="validationForm">
+            <div class="fNameClass">
+                Name: <input type="text" name="fName" placeholder="Name" onchange="validateName()" required />
+                <span id="fname" style="display: none;">Please enter name in proper format</span>
+            </div>
+            <div class="dobClass">
+                Date of Birth: <input type="text" name="dob" placeholder="DD/MM/YYYY" onchange="validateDob()" required />
+                <span id="dob" style="display: none;">Please enter name in proper format</span>
+            </div>
+            <div class="mobClass">
+                Phone Number<input type="text" name="mob" placeholder="xxx-xxxx-xxx" onchange="validatePhone()" required />
+                <span id="mob" style="display: none;">Please enter name in proper format</span>
+            </div>
+            <div class="emailClass">
+                Email: <input type="text" name="email" placeholder="name@yahoo.com" onchange="validateEmail()" required />
+                <span id="emailId" style="display: none;">Please enter name in proper format</span>
+            </div>
+            <div class="submitClass">
+                <input type="submit" value="Click to Submit" onclick="validateForm(this.form)" />
+            </div>
+
+        </form>
+    </div>
+</body></html>
