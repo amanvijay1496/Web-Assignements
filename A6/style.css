@@ -1,0 +1,29 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+    border: 1px dashed grey;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+.left {
+    width:20%; 
+	min-height:530px;
+    border-right: 1px solid grey;
+    display: inline-block;
+}
+.centerbody{
+  
+    text-align: center;
+    width: 79%;
+    min-height:530px;
+    display: inline-block;
+}
+.section{
+    margin-top: 20px;
+    border-top: 1px solid black;
+}
